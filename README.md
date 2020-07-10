@@ -10,6 +10,8 @@ Follow the Steps below!
    {{ 'https://raw.githubusercontent.com/3iwebexperts/shopify-infinite-scroll/master/infinite-scroll.js' | script_tag }}
 
 3. In the online code editor of collection page find to the loop {% for product in collection.products %} and add more a DIV tag to wrapper and add more a DIV tag just below it.    For example:
+
+   <code>
     <div id="infinite-loop" >
           {% for product in collection.products %}
             {% include 'product-grid-item' %}
@@ -20,8 +22,10 @@ Follow the Steps below!
         <a href="{{ paginate.next.url }}">Loading More</a>
         {% endif %}  
     </div>
+   </code>
 
 4. Add the javascript code to the end of the file.
+   <code>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var endlessScroll = new Ajaxinate({
@@ -30,5 +34,6 @@ Follow the Steps below!
         });
       });
     </script>
+   </code>
 
 5. Save
