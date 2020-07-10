@@ -27,7 +27,7 @@ Follow the Steps below!
     </div>
    ```
 
-6. Add the javascript code to the end of the file.
+6. Add the javascript code to the end of the file. ( upload the loading.gif image to assets folder )
    ```html
    <script type="text/javascript">
      function callbackInfiniteScroll(){}
