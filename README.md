@@ -14,7 +14,6 @@ Follow the Steps below!
 3. In the online code editor of collection page find to the loop {% for product in collection.products %} and add more a DIV tag to wrapper and add more a DIV tag just below it.    For example:
 
    ```html
-   <pre>
     <div id="infinite-loop" >
           {% for product in collection.products %}
             {% include 'product-grid-item' %}
@@ -25,12 +24,10 @@ Follow the Steps below!
         <a href="{{ paginate.next.url }}">Loading More</a>
         {% endif %}  
     </div>
-   </pre>
    ```
 
 4. Add the javascript code to the end of the file.
    ```html
-   <pre>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var endlessScroll = new Ajaxinate({
@@ -39,7 +36,6 @@ Follow the Steps below!
         });
       });
     </script>
-   </pre>
    ```
 
 5. Save
