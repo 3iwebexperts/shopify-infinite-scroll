@@ -31,8 +31,8 @@ Follow the Steps below!
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var endlessScroll = new Ajaxinate({
-          container: '#Huratips-Loop',
-          pagination: '#Huratips-Pagination'
+          container: '#infinite-loop',
+          pagination: '#infinite-pagination'
         });
       });
     </script>
